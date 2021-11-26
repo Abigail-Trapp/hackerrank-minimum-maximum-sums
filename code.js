@@ -10,3 +10,5 @@ function miniMaxSum(arr) {
     console.log(`${maxFilter} ${minFilter}`)
     
 }
+console.log(miniMaxSum([1,3,4,7,8]))
+console.log("hello")
