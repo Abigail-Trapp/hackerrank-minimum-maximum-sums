@@ -7,8 +7,8 @@ function miniMaxSum(arr) {
     let maxFilter = arr.filter(arr => arr !== max).reduce((acc,n)=>acc+n)
     let minFilter = arr.filter(arr => arr !== min).reduce((acc,n)=>acc+n)
     
-    console.log(`${maxFilter} ${minFilter}`)
+    let output = (`${maxFilter} ${minFilter}`)
+    return output
     
 }
-console.log(miniMaxSum([1,3,4,7,8]))
-console.log("hello")
+document.write(`[1,3,4,7,8] = ${miniMaxSum([1,3,4,7,8])}`)
