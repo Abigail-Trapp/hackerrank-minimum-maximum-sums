@@ -12,3 +12,4 @@ function miniMaxSum(arr) {
     
 }
 document.write(`[1,3,4,7,8] = ${miniMaxSum([1,3,4,7,8])}`)
+
