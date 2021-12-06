@@ -11,5 +11,9 @@ function miniMaxSum(arr) {
     return output
     
 }
-document.write(`[1,3,4,7,8] = ${miniMaxSum([1,3,4,7,8])}`)
+//document.write(`[1,3,4,7,8] = ${miniMaxSum([1,3,4,7,8])}`)
+let heading = document.querySelector("h1")
+let results = document.querySelector("div")
+results.innerHTML = `[1,3,4,7,8] = ${miniMaxSum([1,3,4,7,8])}`
+heading.append(results)
 
