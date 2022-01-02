@@ -1,13 +1,12 @@
 function miniMaxSum(arr) {
     // Write your code here
+   
+    arr.sort()
+    let maxFilter = arr.slice(1).reduce((acc,n)=>acc+n,0)
+    arr.reverse()
+    let minFilter = arr.slice(1).reduce((acc,n)=>acc+n,0)
     
-    let max = Math.max(...arr)
-    let min = Math.min(...arr)
-    
-    let maxFilter = arr.filter(arr => arr !== max).reduce((acc,n)=>acc+n)
-    let minFilter = arr.filter(arr => arr !== min).reduce((acc,n)=>acc+n)
-    
-    let output = (`${maxFilter},${minFilter}`)
+    let output = (`${minFilter},${maxFilter}`)
     return output
     
 }
@@ -15,6 +14,7 @@ function miniMaxSum(arr) {
 let heading = document.querySelector("h1")
 let results = document.querySelector("div")
 results.innerHTML = `[1,3,4,7,8] = ${miniMaxSum([1,3,4,7,8])} 
-[2,4,6,10,15] = ${miniMaxSum([2,4,6,10,15])}`
+[1,2,3,4,5] = ${miniMaxSum([1,2,3,4,5])}`
 heading.append(results)
 
+// [1,2,3,4,5] 10,14
